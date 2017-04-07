@@ -96,3 +96,11 @@ FEED_EXPORTERS = {
     'jsonlines': 'kaken_scrayping.exporters.NonEscapeJsonLinesItemExporter',  
 }
 FEED_EXPORT_ENCODING = 'utf-8'
+
+ITEM_PIPELINES = {
+    'kaken_scrayping.pipelines.MongoPipeline': 800,
+}
+
+# 必要に応じて
+# MONGO_URL = 'mongodb://mongohost:27017/'
+# MONGO_DATABASE = 'news'
