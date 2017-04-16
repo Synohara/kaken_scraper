@@ -7,5 +7,4 @@
 
   ```
   scrapy crawl kaken_crawler
-  
   ```
